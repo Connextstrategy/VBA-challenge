@@ -104,23 +104,24 @@ Sub stockanalysis()
  
 
 ' Set initial value of Open Price
-  Open_Price = CurrentWs.Cells(2, 3).Value
+    Open_Price = CurrentWs.Cells(2, 3).Value
   
 ' Loop through each row
-  For i = 2 To Lastrow
+    For i = 2 To Lastrow
   
 ' Check if we are still within the same ticker, if it is not...
     If CurrentWs.Cells(i + 1, 1).Value <> CurrentWs.Cells(i, 1).Value Then
            
 ' Close Price Loop
+
     Close_Price = CurrentWs.Cells(i, 6).Value
     yearlychange = Close_Price - Open_Price
     
     If Open_Price <> 0 Then
         percentchange = (yearlychange / Open_Price) * 100
                     Else
-    ' Unlikely, but it needs to be checked to avoid program crushing
-    ' MsgBox( "For " & Ticker_Name & ", Row " & CStr(i) & ": Open Price =" & Open_Price & ". Fix <open> field manually and save the spreadsheet." )
+  ' Unlikely, but it needs to be checked to avoid program crushing
+  ' MsgBox( "For " & Ticker_Name & ", Row " & CStr(i) & ": Open Price =" & Open_Price & ". Fix <open> field manually and save the spreadsheet." )
                     End If
 
 ' Set the tickername
@@ -134,6 +135,7 @@ Sub stockanalysis()
       CurrentWs.Range("J" & Summary_Table_Row).Value = tickername
       
 ' Print the yearlychange in the Summary Table
+
       CurrentWs.Range("K" & Summary_Table_Row).Value = yearlychange
       If (yearlychange > 0) Then
         CurrentWs.Range("K" & Summary_Table_Row).Interior.ColorIndex = 4
@@ -142,12 +144,15 @@ Sub stockanalysis()
                     End If
       
 ' Print the percentagechange in the Summary Table
+
       CurrentWs.Range("L" & Summary_Table_Row).Value = (CStr(percentchange) & "%")
       
 ' Print the tickervolume in the Summary Table
+
       CurrentWs.Range("M" & Summary_Table_Row).Value = tickervolume
       
 ' Add one to the summary table row
+
       Summary_Table_Row = Summary_Table_Row + 1
       
 ' Reset the percentchange, Close_Price, Open_Price
@@ -190,7 +195,6 @@ Sub stockanalysis()
 
   Next i
   
-  
 ' Analysis of Max Percent Change, Min Percent Change, Max Tickername, Min Tickername, Max Volume, Min Volume
  
         CurrentWs.Range("Q2").Value = (CStr(MAX_PERCENT) & "%")
@@ -204,8 +208,6 @@ Sub stockanalysis()
         
   
 End Sub
-  
-
 
 ## Help
 
