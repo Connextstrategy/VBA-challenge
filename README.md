@@ -51,11 +51,12 @@ Sub stockanalysis()
         
         For Each CurrentWs In Worksheets
 
-' Set an initial variables for tickername as text
+' Set an initial variables for tickername as text. Tickername functionality was taken from Credit Card example in my class. 
+
     Dim tickername As String
     tickername = " "
   
-' Set an initial variable for tickervolume, yearlychange, percentchange
+' Set an initial variable for tickervolume, yearlychange, percentchange. Set them as zero. Tickervolume functionality came from Credit Card example
     
     Dim yearlychange As Double
     yearlychange = 0
@@ -66,14 +67,14 @@ Sub stockanalysis()
     Dim tickervolume As Double
     tickervolume = 0
     
-' Set an initial variable for open and close price of stock
+' Set an initial variable for open and close price of stock. Set open and close stocks as zero
     
     Dim Open_Price As Double
     Open_Price = 0
     Dim Close_Price As Double
     Close_Price = 0
     
-' Set an initial variable for Best, Worst Yearly Change and Total Volume
+' Set an initial variable for Best, Worst Yearly Change and Total Volume. Set Percent (Max & Min) and Max Volume as zero. 
     
     Dim MAX_TICKERNAME As String
     MAX_TICKERNAME = " "
@@ -99,7 +100,7 @@ Sub stockanalysis()
     Dim Summary_Table_Row As Integer
     Summary_Table_Row = 2
     
-' Counts the number of rows
+' Counts the number of rows and helps cycle up and down row (Used previous code for this from Rutgers class)
     Lastrow = CurrentWs.Cells(Rows.Count, 1).End(xlUp).Row
  
 
@@ -142,7 +143,7 @@ Sub stockanalysis()
 
       CurrentWs.Range("J" & Summary_Table_Row).Value = tickername
       
-' Print the yearlychange in the Summary Table
+' Print the yearlychange in the Summary Table with functionality
 
       CurrentWs.Range("K" & Summary_Table_Row).Value = yearlychange
       If (yearlychange > 0) Then
@@ -169,7 +170,7 @@ Sub stockanalysis()
       Close_Price = 0
       Open_Price = CurrentWs.Cells(i + 1, 3).Value
       
-' If then for Best Percent Change, Worst Percent Change
+' If then for Best Percent Change, Worst Percent Change (Got help from previous answer I found on GitHub because I could not figure out the right code for If...Then...Else
     
         If (yearlychange > MAX_PERCENT) Then
                         MAX_PERCENT = yearlychange
