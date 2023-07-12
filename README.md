@@ -36,7 +36,7 @@ I needed to create a script that loops through all the stocks in Excel file for 
 Sub stockanalysis()
 
 
-' Set CurrentWs as a worksheet object variable.
+' Set CurrentWs as a worksheet object variable. CurrentWs was added to each "Cells" or "Ranges" after I got it to run on one sheet
         
         Dim CurrentWs As Worksheet
         
@@ -231,11 +231,4 @@ Christopher Manfredi
 
 ## Acknowledgments
 
-* This is specifically for an exercise for 
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* This is specifically for an exercise for Rutgers Boot Camp 
