@@ -10,12 +10,16 @@ I needed to create a script that loops through all the stocks in Excel file for 
 
 * Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
 
-* The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+* The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year. It will look like this below:
+  
 
   ![image](https://github.com/Connextstrategy/VBA-challenge/assets/18508699/f7fc3a73-0485-4841-93d2-509fa019a151)
 
 
 * The total stock volume of the stock. The result should match the following image
+
+  ![image](https://github.com/Connextstrategy/VBA-challenge/assets/18508699/667dd0b1-2978-436b-983d-7545be95b66c)
+
 
 * Add functionality to your script to return the stock with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume
 
