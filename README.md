@@ -6,13 +6,18 @@ This VBA code was made to help me on my very new path in becoming a programmer a
 
 I needed to create a script that loops through all the stocks in Excel file for one year and output the following information:
 
-The ticker symbol
+* The ticker symbol
 
-Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
+* Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
 
-The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+* The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
 
-The total stock volume of the stock. The result should match the following image
+  ![image](https://github.com/Connextstrategy/VBA-challenge/assets/18508699/f7fc3a73-0485-4841-93d2-509fa019a151)
+
+
+* The total stock volume of the stock. The result should match the following image
+
+* Add functionality to your script to return the stock with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume
 
 ## Getting Started
 
@@ -35,10 +40,7 @@ code blocks for commands
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+No issues as it runs well on Microsoft Excel. Do recommend erasing the updated data to check the code every time. 
 
 ## Authors
 
@@ -46,17 +48,11 @@ Christopher Manfredi
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
     * Initial Release
 
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## Acknowledgments
+
+* This is specifically for an exercise for 
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
