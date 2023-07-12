@@ -107,9 +107,11 @@ Sub stockanalysis()
     Open_Price = CurrentWs.Cells(2, 3).Value
   
 ' Loop through each row
+
     For i = 2 To Lastrow
   
 ' Check if we are still within the same ticker, if it is not...
+
     If CurrentWs.Cells(i + 1, 1).Value <> CurrentWs.Cells(i, 1).Value Then
            
 ' Close Price Loop
@@ -119,19 +121,25 @@ Sub stockanalysis()
     
     If Open_Price <> 0 Then
         percentchange = (yearlychange / Open_Price) * 100
+        
                     Else
+                    
   ' Unlikely, but it needs to be checked to avoid program crushing
   ' MsgBox( "For " & Ticker_Name & ", Row " & CStr(i) & ": Open Price =" & Open_Price & ". Fix <open> field manually and save the spreadsheet." )
+  
                     End If
 
 ' Set the tickername
+
       tickername = CurrentWs.Cells(i, 1).Value
 
 
 ' Add to the tickervolume
+
       tickervolume = tickervolume + CurrentWs.Cells(i, 7).Value
 
 ' Print the tickername in the Summary Table
+
       CurrentWs.Range("J" & Summary_Table_Row).Value = tickername
       
 ' Print the yearlychange in the Summary Table
@@ -185,6 +193,7 @@ Sub stockanalysis()
                     tickervolume = 0
       
 ' If the cell immediately following a row is the ticker...
+
                     Else
 
 ' Add to the tickervolume
@@ -206,7 +215,6 @@ Sub stockanalysis()
             
          Next CurrentWs
         
-  
 End Sub
 
 ## Help
