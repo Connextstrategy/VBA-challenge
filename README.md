@@ -1,26 +1,33 @@
 # Stock Price Analysis Tool 
 
-This VBA code was made to 
+This VBA code was made to help me on my very new path in becoming a programmer and Excel expert.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+I needed to create a script that loops through all the stocks in Excel file for one year and output the following information:
+
+The ticker symbol
+
+Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
+
+The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+
+The total stock volume of the stock. The result should match the following image
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* Must have Microsoft Excel (at least Windows 10) with 
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Download the VBA raw data and copy and paste it while in VBA Developer mode in Excel. 
+* No modifications needed to be made to files/folders
 
 ### Executing program
 
-* How to run the program
+Click on the box to run the program on all Excel files 
 * Step-by-step bullets
 ```
 code blocks for commands
@@ -35,10 +42,7 @@ command to run if program contains helper info
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Christopher Manfredi 
 
 ## Version History
 
