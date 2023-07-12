@@ -44,8 +44,13 @@ Sub stockanalysis()
         
         Dim COMMAND_SPREADSHEET As Boolean
         
-        Need_Summary_Table_Header = False       'Set Header flag
-        COMMAND_SPREADSHEET = True              'Hard part flag
+'Set Header flag
+
+        Need_Summary_Table_Header = False
+
+'Set Multipage Command which will command from any of the years (2018,2019,2020)
+
+        COMMAND_SPREADSHEET = True              
         
 ' Loop through all of the worksheets in the active workbook.
         
