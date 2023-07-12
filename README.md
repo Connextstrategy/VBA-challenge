@@ -101,10 +101,12 @@ Sub stockanalysis()
     Summary_Table_Row = 2
     
 ' Counts the number of rows and helps cycle up and down row (Used previous code for this from Rutgers class)
+
     Lastrow = CurrentWs.Cells(Rows.Count, 1).End(xlUp).Row
  
 
 ' Set initial value of Open Price
+
     Open_Price = CurrentWs.Cells(2, 3).Value
   
 ' Loop through each row
@@ -123,10 +125,7 @@ Sub stockanalysis()
     If Open_Price <> 0 Then
         percentchange = (yearlychange / Open_Price) * 100
         
-                    Else
-                    
-  ' Unlikely, but it needs to be checked to avoid program crushing
-  ' MsgBox( "For " & Ticker_Name & ", Row " & CStr(i) & ": Open Price =" & Open_Price & ". Fix <open> field manually and save the spreadsheet." )
+                    Els
   
                     End If
 
